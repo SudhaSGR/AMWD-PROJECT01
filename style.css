@@ -1,0 +1,45 @@
+.student-card .card-img-top {
+    background-color: #FFC107;
+    padding: 20px;
+    width: 20vw;
+  }
+  .student-card .card-body {
+    background-color:  #032830;
+    ; 
+    color: white;
+    width: 20vw;
+  }
+  .student-card .btn-danger {
+    display: flex;
+    margin: 10px auto 0;
+  }
+
+.student-cards{
+    display: flex;
+}
+
+.btn-dark{
+    margin: 30px;
+}
+
+.fa-graduation-cap{
+    color: white;
+}
+  /* .col-md-4{
+    display: flex;
+    flex-direction;
+  } */
+
+  /* .cap_icon{
+    margin-right: 100px;
+  }
+
+  .navbar-brand{
+    margin-top: 20px;
+  } */
+
+  /* .title_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Managaement</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+
+<body>
+    <div style="background-color:#032830;">
+        <nav class="navbar bg-body-tertiary title_name">
+            <div class="container-fluid">
+                <div class="title_name">
+                    <i class="fas fa-graduation-cap d-flex flex-column align-items-center"></i>
+                    <a class="navbar-brand" style="color: white;">Student Managemnt System</a>
+                </div>
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2 mr-5" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <div class="text-right">
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo"> + Add Student</button>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"> Add Student Infor </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="sname" class="col-form-label">Name:</label>
+                                <input type="text" class="form-control" id="sname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="sgender" class="col-form-label">Gender:</label>
+                                <select class="form-control" id="sgender" required>
+                                    <option value="" disabled selected>Select gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="sdob" class="col-form-label">DOB:</label>
+                                <input type="text" class="form-control" id="sdob">
+                            </div>
+                            <div class="mb-3">
+                                <label for="saddress" class="col-form-label">Address:</label>
+                                <input type="text" class="form-control" id="saddress">
+                            </div>
+                            <div class="mb-3">
+                                <label for="scontact" class="col-form-label">Contact:</label>
+                                <input type="text" class="form-control" id="scontact">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="addStudent()">Add Student</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="std_data">
+        <div class="row" id="student-cards">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js" type="text/JavaScript"></script>
+</body>
+
+</html>
